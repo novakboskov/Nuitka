@@ -1127,9 +1127,10 @@ This is very much in line with that the Python C-API does.
 
 Every helper function that contains code that might raise needs these
 variables. After a failed call, our variant of ``PyErr_Fetch`` called
-``FETCH_ERROR_OCCURRED`` must be used to catch the defined error, unless some
-quick exception cases apply. The quick exception means, ``NULL`` return from
-C-API without a set exception means means e.g. ``StopIteration``.
+``FETCH_ERROR_OCCURRED`` must be used to catch the defined error,
+unless some quick exception cases apply. The quick exception means,
+``NULL`` return from C-API without a set exception means
+e.g. ``StopIteration``.
 
 As an optimization, functions that raise exceptions, but are known not to do so,
 for whatever reason, could only be asserted to not do so.
@@ -1937,8 +1938,8 @@ they produce an actual helper function:
 Dictionary Contractions
 +++++++++++++++++++++++
 
-The dictionary contractions of are like list contractions in Python3, in that
-they produce an actual helper function:
+The dictionary contractions of Python2.7 are like list contractions in
+Python3, in that they produce an actual helper function:
 
 .. code-block:: python
 

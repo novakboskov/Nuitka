@@ -85,6 +85,8 @@ def displayOutput(stdout, stderr):
         my_print(stderr)
 
 
+from explore import log_compare
+@log_compare(filename='compensations.log')
 def compareOutput(kind, out_cpython, out_nuitka, ignore_warnings, ignore_infos,
                   syntax_errors):
     fromdate = ""

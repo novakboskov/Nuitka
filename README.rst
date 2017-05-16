@@ -56,8 +56,8 @@ Requirements
 
   .. admonition:: Python3, yes but Python2 *compile time* dependency
 
-     For Python3 you *need* a Python2, but only during the compile time
-     only, and that is for Scons (which orchestrates the C compilation), and
+     For Python3 you *need* a Python2, but only during the compile time,
+     and that is for Scons (which orchestrates the C compilation), and
      is not yet ported. So for Python 3.x, there is currently a requirement to
      also have a Python 2.x installed.
 
